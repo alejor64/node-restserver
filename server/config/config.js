@@ -17,6 +17,6 @@ let urlDB
 if(process.env.NODE_ENV === 'dev'){
     urlDB = 'mongodb://localhost:27017/cafe-Udemy-FH'
 } else {
-    urlDB = 'mongodb+srv://alejor64:HRktWT4aJLNaMRCz@cluster0-f4kf4.azure.mongodb.net/cafe-Udemy-FH'
+    urlDB = process.env.MONGO_URI
 }
 process.env.URLDB = urlDB
