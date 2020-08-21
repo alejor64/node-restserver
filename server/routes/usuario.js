@@ -6,10 +6,6 @@ const app = express()
 const {verificarToken, verificaAdminRole} = require('../middlewares/autenticacion.js')
 const usuario = require('../models/usuario')
 
-app.get('/', (req, res) => {
-    res.json('Hello')
-})
-
 app.get('/usuarios', verificarToken, (req, res) => {
     
     let desde = req.query.desde || 0
