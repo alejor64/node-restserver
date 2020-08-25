@@ -1,1 +1,7 @@
 node_modules/
+
+/upload/productos/*
+/upload/usuarios/*
+
+!/upload/productos/.gitkeep
+!/upload/usuarios/.gitkeep
